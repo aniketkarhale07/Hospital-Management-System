@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments | MediCare Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <a href="index.html" class="text-2xl font-bold text-teal-700">
+            🏥 Medi<span class="text-teal-400">Care</span>
+        </a>
+
+        <div class="hidden md:flex space-x-6 font-medium">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="patient.html">Patients</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="doctor.html">Doctors</a>
+            <a href="appointment.html" class="text-teal-600">Appointments</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section class="py-16">
+    <div class="max-w-4xl mx-auto px-6">
+
+        <div class="text-center mb-10">
+            <p class="text-teal-600 font-semibold">ONLINE BOOKING</p>
+            <h1 class="text-4xl font-bold mt-2">
+                Book an Appointment
+            </h1>
+            <p class="text-gray-500 mt-3">
+                Schedule your consultation with our specialists.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-10">
+
+            <form class="grid md:grid-cols-2 gap-6">
+
+                <div>
+                    <label class="font-semibold">Full Name</label>
+                    <input type="text"
+                           placeholder="Enter your name"
+                           class="w-full mt-2 border rounded-lg px-4 py-3 focus:ring-2 focus:ring-teal-500 outline-none">
+                </div>
+
+                <div>
+                    <label class="font-semibold">Phone Number</label>
+                    <input type="tel"
+                           placeholder="+91 XXXXX XXXXX"
+                           class="w-full mt-2 border rounded-lg px-4 py-3 focus:ring-2 focus:ring-teal-500 outline-none">
+                </div>
+
+                <div>
+                    <label class="font-semibold">Email</label>
+                    <input type="email"
+                           placeholder="your@email.com"
+                           class="w-full mt-2 border rounded-lg px-4 py-3 focus:ring-2 focus:ring-teal-500 outline-none">
+                </div>
+
+                <div>
+                    <label class="font-semibold">Department</label>
+                    <select class="w-full mt-2 border rounded-lg px-4 py-3">
+                        <option>Select Department</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Orthopedics</option>
+                        <option>Pediatrics</option>
+                        <option>Dermatology</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="font-semibold">Doctor</label>
+                    <select class="w-full mt-2 border rounded-lg px-4 py-3">
+                        <option>Select Doctor</option>
+                        <option>Dr. Rajesh Mehta</option>
+                        <option>Dr. Priya Singh</option>
+                        <option>Dr. Arjun Shah</option>
+                        <option>Dr. Neha Kapoor</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="font-semibold">Appointment Date</label>
+                    <input type="date"
+                           class="w-full mt-2 border rounded-lg px-4 py-3">
+                </div>
+
+                <div>
+                    <label class="font-semibold">Appointment Time</label>
+                    <select class="w-full mt-2 border rounded-lg px-4 py-3">
+                        <option>Select Time</option>
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>02:00 PM</option>
+                        <option>04:00 PM</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="font-semibold">Appointment Type</label>
+                    <select class="w-full mt-2 border rounded-lg px-4 py-3">
+                        <option>In-Person Consultation</option>
+                        <option>Online Consultation</option>
+                        <option>Follow-up</option>
+                    </select>
+                </div>
+
+                <div class="md:col-span-2">
+                    <label class="font-semibold">Message</label>
+                    <textarea
+                        rows="4"
+                        placeholder="Describe your concern..."
+                        class="w-full mt-2 border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                </div>
+
+                <div class="md:col-span-2">
+                    <button type="submit"
+                            class="w-full bg-teal-600 hover:bg-teal-700 text-white py-4 rounded-lg font-bold text-lg">
+                        Confirm Appointment
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
