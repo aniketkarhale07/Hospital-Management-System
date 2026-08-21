@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MediCare Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="hidden md:block w-64 bg-gray-900 text-white p-6">
+
+        <h1 class="text-2xl font-bold mb-10">
+            🏥 MediCare
+        </h1>
+
+        <nav class="space-y-3">
+
+            <a href="dashboard.html"
+               class="block bg-teal-600 px-4 py-3 rounded-lg">
+                📊 Dashboard
+            </a>
+
+            <a href="patient.html"
+               class="block px-4 py-3 rounded-lg hover:bg-gray-800">
+                👥 Patients
+            </a>
+
+            <a href="doctor.html"
+               class="block px-4 py-3 rounded-lg hover:bg-gray-800">
+                👨‍⚕️ Doctors
+            </a>
+
+            <a href="appointment.html"
+               class="block px-4 py-3 rounded-lg hover:bg-gray-800">
+                📅 Appointments
+            </a>
+
+            <a href="contact.html"
+               class="block px-4 py-3 rounded-lg hover:bg-gray-800">
+                📞 Contact
+            </a>
+
+            <a href="index.html"
+               class="block px-4 py-3 rounded-lg hover:bg-gray-800">
+                🏠 Website
+            </a>
+
+        </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1">
+
+        <header class="bg-white shadow px-8 py-5 flex justify-between items-center">
+            <div>
+                <h2 class="text-2xl font-bold">Dashboard</h2>
+                <p class="text-gray-500">Welcome back, Administrator</p>
+            </div>
+
+            <div class="bg-teal-100 text-teal-700 px-4 py-2 rounded-full">
+                Admin
+            </div>
+        </header>
+
+        <section class="p-8">
+
+            <!-- Cards -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Patients</span>
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mt-4">2,480</h3>
+                    <p class="text-green-600 mt-2">↑ 12% this month</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Doctors</span>
+                        <span class="text-2xl">👨‍⚕️</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mt-4">52</h3>
+                    <p class="text-green-600 mt-2">↑ 4 new doctors</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Appointments</span>
+                        <span class="text-2xl">📅</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mt-4">186</h3>
+                    <p class="text-blue-600 mt-2">Today's appointments</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Revenue</span>
+                        <span class="text-2xl">💰</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mt-4">₹8.4L</h3>
+                    <p class="text-green-600 mt-2">↑ 8.2% this month</p>
+                </div>
+
+            </div>
+
+            <!-- Activity -->
+            <div class="grid lg:grid-cols-2 gap-6 mt-8">
+
+                <div class="bg-white rounded-2xl shadow p-6">
+
+                    <h3 class="text-xl font-bold mb-6">
+                        Today's Appointments
+                    </h3>
+
+                    <div class="space-y-4">
+
+                        <div class="flex justify-between items-center border-b pb-4">
+                            <div>
+                                <p class="font-semibold">Rahul Sharma</p>
+                                <p class="text-sm text-gray-500">Dr. Mehta • Cardiology</p>
+                            </div>
+                            <span class="text-teal-600 font-semibold">09:30 AM</span>
+                        </div>
+
+                        <div class="flex justify-between items-center border-b pb-4">
+                            <div>
+                                <p class="font-semibold">Priya Patel</p>
+                                <p class="text-sm text-gray-500">Dr. Singh • Neurology</p>
+                            </div>
+                            <span class="text-teal-600 font-semibold">11:00 AM</span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="font-semibold">Amit Kumar</p>
+                                <p class="text-sm text-gray-500">Dr. Shah • Orthopedics</p>
+                            </div>
+                            <span class="text-teal-600 font-semibold">02:30 PM</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-6">
+
+                    <h3 class="text-xl font-bold mb-6">
+                        Hospital Overview
+                    </h3>
+
+                    <div class="space-y-6">
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>General Ward</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="bg-teal-500 h-3 rounded-full w-[78%]"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>ICU</span>
+                                <span>62%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="bg-orange-500 h-3 rounded-full w-[62%]"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Emergency</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="bg-red-500 h-3 rounded-full w-[45%]"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
+
